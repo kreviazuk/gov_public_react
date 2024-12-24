@@ -1,0 +1,86 @@
+.layout-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  
+  .content {
+    flex: 1;
+    overflow-y: auto;
+    padding-bottom: 60px; // 为底部tabbar留出空间
+  }
+}
+:where(.css-dev-only-do-not-override-77tu7h).ant-tabs {
+  .ant-tabs-tab + .ant-tabs-tab {
+    margin: 0;
+  }
+}
+.ant-tabs-nav-list {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 0 20px;
+}
+.tab-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: #fff;
+  border-top: 1px solid #f0f0f0;
+  margin: 0;
+  box-sizing: border-box;
+ 
+}
+.ant-tabs-tab  {
+  margin: 0;
+}
+.tablist {
+  display: flex;
+  justify-content: space-around;
+}
+.ant-tabs-nav {
+  margin: 0!important;
+
+}
+.tab-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .anticon {
+    margin-right: 0!important;
+  }
+  .tab-icon {
+    font-size: 40px;
+    margin-bottom: 8px;
+  }
+
+  .tab-label {
+    font-size: 24px;
+  }
+}
+
+// Override antd default styles
+.ant-tabs {
+  &-nav {
+    margin: 0;
+
+    &::before {
+      border: none;
+    }
+  }
+
+  &-tab {
+    padding: 8px 0;
+    margin: 0;
+
+    & + .ant-tabs-tab {
+      margin: 0;
+    }
+  }
+
+  &-ink-bar {
+    display: none;
+  }
+}

@@ -1,0 +1,20 @@
+.section-title {
+  display: flex;
+  margin-bottom: 24px;
+  padding-left: 24px;
+
+  .title-border {
+    width: 6px;
+    height: 36px;
+    background: #287CFF;
+    margin-right: 12px;
+    border-radius: 3px;
+  }
+
+  h3 {
+    font-size: 32px;
+    color: #1C1940;
+    font-weight: 500;
+    line-height: 36px;
+  }
+} 

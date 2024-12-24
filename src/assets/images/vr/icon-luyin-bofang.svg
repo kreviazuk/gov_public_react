@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="41px" height="41px" viewBox="0 0 41 41" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon-luyin-bofang</title>
+    <defs>
+        <circle id="path-1" cx="20.5" cy="20.5" r="20.5"></circle>
+        <filter x="-18.3%" y="-18.3%" width="136.6%" height="136.6%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.0731148098 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="7-1-养育资讯列表" transform="translate(-257, -428)">
+            <g id="编组-3备份-2" transform="translate(195, 388)">
+                <g id="icon/tool/media/paly" transform="translate(62, 40)">
+                    <g id="椭圆形">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                        <use fill-opacity="0.4" fill="#000000" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    </g>
+                    <g id="icon/tool/play/icon/bofang" transform="translate(12.6727, 11.5131)">
+                        <rect id="矩形备份-7" fill="#D8D8D8" opacity="0" x="0" y="1.15959596" width="15.6545455" height="15.6545455"></rect>
+                        <path d="M13.8741539,10.8117106 L7.22925563,16.0234536 C6.2214153,16.8139254 4.76359527,16.6377134 3.97312346,15.629873 C3.65284863,15.2215272 3.47878788,14.7175599 3.47878788,14.1985972 L3.47878788,3.77511125 C3.47878788,2.49425692 4.51712547,1.45591933 5.7979798,1.45591933 C6.31694252,1.45591933 6.82090977,1.62998008 7.22925563,1.95025491 L13.8741539,7.16199789 C14.8819942,7.95246971 15.0582062,9.41028973 14.2677344,10.4181301 C14.1528169,10.5646482 14.020672,10.6967931 13.8741539,10.8117106 Z" id="Triangle-2" fill="#FFFFFF"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

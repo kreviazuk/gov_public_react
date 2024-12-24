@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon_weizhi</title>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="2-1-我要入托" transform="translate(-127, -243)" fill="#A9CAFF" fill-rule="nonzero">
+            <g id="编组" transform="translate(12, 156)">
+                <g id="icon_weizhi" transform="translate(115, 87)">
+                    <path d="M5.937,12 L5.925,12 C5.715,12 5.517,11.916 5.373,11.76 C5.259,11.64 4.233,10.554 3.207,9.186 C1.827,7.332 1.125,5.85 1.125,4.794 C1.125,2.148 3.279,0 5.925,0 C8.571,0 10.725,2.148 10.725,4.794 C10.725,5.436 10.479,6.222 9.987,7.134 C9.519,8.01 8.811,9.03 7.881,10.158 L7.875,10.164 L6.495,11.736 C6.357,11.904 6.153,12 5.937,12 Z M5.925,7.032 C7.167,7.032 8.169,6.024 8.169,4.788 C8.169,3.552 7.167,2.55 5.925,2.55 C4.683,2.55 3.675,3.552 3.675,4.794 C3.675,6.036 4.683,7.032 5.925,7.032 Z" id="形状"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

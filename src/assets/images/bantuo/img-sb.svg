@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="45px" height="45px" viewBox="0 0 45 45" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>img-sb</title>
+    <defs>
+        <linearGradient x1="36.779764%" y1="0%" x2="85.7748118%" y2="104.528754%" id="linearGradient-1">
+            <stop stop-color="#F0F5FF" offset="0%"></stop>
+            <stop stop-color="#DAE9FF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1-4-2-办托进度-失败" transform="translate(-98, -149)">
+            <g id="编组" transform="translate(98, 149)">
+                <circle id="椭圆形" fill="url(#linearGradient-1)" cx="22.5" cy="22.5" r="22.5"></circle>
+                <g id="exclaimination" transform="translate(11.52, 11.52)" fill-rule="nonzero">
+                    <rect id="矩形" fill="#000000" opacity="0" x="0" y="0" width="21.96" height="21.96"></rect>
+                    <path d="M9.6075,17.2420313 C9.6075,18.0000421 10.2219892,18.6145312 10.98,18.6145312 C11.7380108,18.6145312 12.3525,18.0000421 12.3525,17.2420313 C12.3525,16.4840204 11.7380108,15.8695312 10.98,15.8695312 C10.2219892,15.8695312 9.6075,16.4840204 9.6075,17.2420313 Z M10.29375,13.6392187 L11.66625,13.6392187 C11.7606094,13.6392187 11.8378125,13.5620156 11.8378125,13.4676562 L11.8378125,3.51703125 C11.8378125,3.42267188 11.7606094,3.34546875 11.66625,3.34546875 L10.29375,3.34546875 C10.1993906,3.34546875 10.1221875,3.42267188 10.1221875,3.51703125 L10.1221875,13.4676562 C10.1221875,13.5620156 10.1993906,13.6392187 10.29375,13.6392187 Z" id="形状" stroke="#287CFF" stroke-width="1.01353846" fill="#287CFF"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

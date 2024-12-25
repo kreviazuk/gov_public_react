@@ -1,0 +1,22 @@
+.apply-button {
+  width: 702px;
+  height: 96px;
+  background: #287CFF;
+  border-radius: 10px;
+  color: #FFFFFF;
+  font-size: 32px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin: 0 auto;
+  display: block;
+
+  &:hover {
+    background: #1a6ae6;
+  }
+
+  &:active {
+    background: #1557c7;
+  }
+} 

@@ -1,0 +1,121 @@
+.bantuo-container {
+  padding: 24px;
+  padding-bottom: 120px;
+  background: #F5F5F5;
+
+  .process-section {
+    margin-bottom: 24px;
+
+    .process-list {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      padding: 32px 24px;
+      background: #FFFFFF;
+      border-radius: 10px;
+
+      .process-item {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+
+        .process-icon {
+          width: 48px;
+          height: 48px;
+          background: #287CFF;
+          border-radius: 24px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: #FFFFFF;
+          font-size: 24px;
+          font-weight: 500;
+        }
+
+        .process-text {
+          color: #1C1940;
+          font-size: 28px;
+        }
+      }
+    }
+  }
+
+  .area-section {
+    margin-bottom: 24px;
+
+    .area-select {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 32px 24px;
+      background: #FFFFFF;
+      border-radius: 10px;
+
+      .area-label {
+        color: #1C1940;
+        font-size: 28px;
+      }
+
+      .area-value {
+        color: #9997A9;
+        font-size: 28px;
+      }
+    }
+  }
+
+  .materials-section {
+    margin-bottom: 48px;
+
+    .materials-list {
+      background: #FFFFFF;
+      border-radius: 10px;
+      padding: 32px 24px;
+
+      .materials-group {
+        margin-bottom: 32px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        .group-title {
+          color: #1C1940;
+          font-size: 28px;
+          font-weight: 500;
+          margin-bottom: 16px;
+        }
+
+        .group-items {
+          .material-item {
+            color: #666666;
+            font-size: 26px;
+            line-height: 48px;
+            padding-left: 20px;
+            position: relative;
+
+            &::before {
+              content: '';
+              position: absolute;
+              left: 0;
+              top: 50%;
+              transform: translateY(-50%);
+              width: 8px;
+              height: 8px;
+              background: #287CFF;
+              border-radius: 4px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .apply-section {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 12px 24px;
+    background: #FFFFFF;
+  }
+} 

@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import './Home.scss';
 import bannerImg from '@/assets/banner.jpg';
 import SectionTitle from '@/components/SectionTitle';
@@ -6,6 +7,7 @@ import SectionTitle from '@/components/SectionTitle';
 interface MenuItem {
   icon: string;
   text: string;
+  path?: string;
 }
 
 interface NewsItem {
@@ -16,8 +18,10 @@ interface NewsItem {
 }
 
 const Home: React.FC = () => {
+  const navigate = useNavigate();
+
   const menuItems: MenuItem[] = [
-    { icon: '/src/assets/images/index/icon-wybt.svg', text: '我要办托' },
+    { icon: '/src/assets/images/index/icon-wybt.svg', text: '我要办托', path: '/bantuo' },
     { icon: '/src/assets/images/index/icon-wyrt.svg', text: '我要入托' },
     { icon: '/src/assets/images/index/icon-rttj.svg', text: '入托体检' },
     { icon: '/src/assets/images/index/icon-yjrt.svg', text: '一键查托' },
@@ -46,9 +50,10 @@ const Home: React.FC = () => {
     }
   ];
 
-  const handleImageError = (e: React.SyntheticEvent<HTMLImageElement, Event>) => {
-    console.error('Image load failed:', e.currentTarget.src);
-    e.currentTarget.src = ''; // 可以设置一个默认图片
+  const handleMenuClick = (item: MenuItem) => {
+    if (item.path) {
+      navigate(item.path);
+    }
   };
 
   return (
@@ -66,12 +71,19 @@ const Home: React.FC = () => {
       <div className="menu-grid">
         <div className="menu-items">
           {menuItems.map((item, index) => (
-            <div key={index} className="menu-item">
+            <div 
+              key={index} 
+              className="menu-item"
+              onClick={() => handleMenuClick(item)}
+            >
               <div className="menu-icon">
                 <img 
                   src={item.icon} 
                   alt={item.text}
-                  onError={handleImageError}
+                  onError={(e: React.SyntheticEvent<HTMLImageElement, Event>) => {
+                    console.error('Image load failed:', e.currentTarget.src);
+                    e.currentTarget.src = '';
+                  }}
                 />
               </div>
               <div className="menu-text">

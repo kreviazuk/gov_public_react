@@ -1,9 +1,22 @@
+import React from 'react';
 import './Home.scss';
 import bannerImg from '@/assets/banner.jpg';
 import SectionTitle from '@/components/SectionTitle';
 
-const Home = () => {
-  const menuItems = [
+interface MenuItem {
+  icon: string;
+  text: string;
+}
+
+interface NewsItem {
+  image: string;
+  title: string;
+  source: string;
+  time: string;
+}
+
+const Home: React.FC = () => {
+  const menuItems: MenuItem[] = [
     { icon: '/src/assets/images/index/icon-wybt.svg', text: '我要办托' },
     { icon: '/src/assets/images/index/icon-wyrt.svg', text: '我要入托' },
     { icon: '/src/assets/images/index/icon-rttj.svg', text: '入托体检' },
@@ -18,7 +31,7 @@ const Home = () => {
     { icon: '/src/assets/images/index/icon-jygy.svg', text: '家庭共育' }
   ];
 
-  const newsItems = [
+  const newsItems: NewsItem[] = [
     {
       image: '/src/assets/banner.jpg',
       title: '托育服务机构达218家，看东营如何让家长放心托、托得起',
@@ -32,6 +45,11 @@ const Home = () => {
       time: '2024-12-16 11:30'
     }
   ];
+
+  const handleImageError = (e: React.SyntheticEvent<HTMLImageElement, Event>) => {
+    console.error('Image load failed:', e.currentTarget.src);
+    e.currentTarget.src = ''; // 可以设置一个默认图片
+  };
 
   return (
     <div className="home-container">
@@ -53,10 +71,7 @@ const Home = () => {
                 <img 
                   src={item.icon} 
                   alt={item.text}
-                  onError={(e) => {
-                    console.error('Image load failed:', item.icon);
-                    e.target.src = ''; // 可以设置一个默认图片
-                  }}
+                  onError={handleImageError}
                 />
               </div>
               <div className="menu-text">
@@ -68,7 +83,7 @@ const Home = () => {
       </div>
 
       {/* News Section */}
-        <SectionTitle title="新闻资讯" />
+      <SectionTitle title="新闻资讯" />
       <div className="news-section">
         {newsItems.map((news, index) => (
           <div key={index} className="news-card">
@@ -91,4 +106,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Home; 
